@@ -1,3 +1,11 @@
 .body{
     background-color: black;
 }
+.header{
+    background-color: #333333;
+    height: 50px;
+}
+.home{
+    background-image: url("../senior-project-scripture-nfts/images/aa.png");
+    height: 750;
+}
