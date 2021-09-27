@@ -1,11 +1,59 @@
 .body{
     background-color: black;
+    align-items: center;
 }
 .header{
+    overflow: hidden;
     background-color: #333333;
+    position: fixed;
+    top: 0;
+    width: 110%;
     height: 50px;
+    margin-left: -1%;
 }
-.home{
-    background-image: url("images/aa.png");
-    height: 750;
+
+a{
+    color: white;
+    float: left;
+    display: block;
+    text-align: center;
+    margin-right: 0%;
+    padding: 15px 15px;
+    position: static;
+    text-decoration: none;
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.home {
+    text-align: center;
+    color: black;
+  }
+
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ff49f3;
+    font-size: 120px;
+    font-family: 'Great Vibes', cursive;
+    text-shadow: 4px 4px 9px #ce49ff;
+}
+
+.logo2{
+    position: absolute;
+    color: #ff49f3;
+    top: 65%;
+    left: 66%;
+    transform: translate(-50%, -60%);
+    font-size: 30px;
+    text-shadow: 4px 4px 9px #ce49ff;
+}
+
+img{
+    width: 110%;
+    height: 950px;
+    margin-left: -1%
 }
