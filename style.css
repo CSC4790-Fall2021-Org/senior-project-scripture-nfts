@@ -1,59 +1,50 @@
+*{
+    background-color: black;
+}
 .body{
     background-color: black;
     align-items: center;
+    max-width: 100%;
+    
 }
 .header{
     overflow: hidden;
-    background-color: #333333;
+    background-color: #222222;
     position: fixed;
     top: 0;
-    width: 110%;
+    width: 100%;
     height: 50px;
-    margin-left: -1%;
 }
 
 a{
     color: white;
-    float: left;
+    float: right;
     display: block;
     text-align: center;
-    margin-right: 0%;
     padding: 15px 15px;
-    position: static;
+    position: relative;
+    right: 0;
     text-decoration: none;
     font-family: 'Ubuntu';
     font-size: 18px;
     font-weight: bold;
+    background-color: #222222;
 }
 
-.home {
-    text-align: center;
+.div {
     color: black;
-  }
-
-.logo{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ff49f3;
-    font-size: 120px;
-    font-family: 'Great Vibes', cursive;
-    text-shadow: 4px 4px 9px #ce49ff;
-}
-
-.logo2{
-    position: absolute;
-    color: #ff49f3;
-    top: 65%;
-    left: 66%;
-    transform: translate(-50%, -60%);
-    font-size: 30px;
-    text-shadow: 4px 4px 9px #ce49ff;
 }
 
 img{
-    width: 110%;
-    height: 950px;
-    margin-left: -1%
+    width: 100%;
+}
+
+.text{
+    color: #ff49f3;
+    font-size: 40px;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    text-shadow: 4px 4px 9px #ce49ff;
+    margin-top: 80px;
+    margin-left: 170px;
 }
