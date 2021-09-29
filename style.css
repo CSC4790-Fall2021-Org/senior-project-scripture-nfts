@@ -14,9 +14,19 @@
     top: 0;
     width: 100%;
     height: 50px;
+    left: 0;
 }
 
-a{
+.tinyButton{
+    float: right;
+    border-radius: 50%;
+    height: 40px;
+    width: 50px;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+
+.link{
     color: white;
     float: right;
     display: block;
@@ -29,10 +39,6 @@ a{
     font-size: 18px;
     font-weight: bold;
     background-color: #222222;
-}
-
-.div {
-    color: black;
 }
 
 .home{
@@ -63,13 +69,14 @@ a{
 .grid{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 160px;
-    position: relative;
+    margin-left: 170px;
+    
 }
 
 .nft{
     margin-top: 50px;
     max-width: 300px;
+    max-height: 300px;
     margin-right: 90px;
 }
 
@@ -81,4 +88,30 @@ a{
     font-family: 'Ubuntu';
     font-weight: bold;
     margin-top: 20px;
+}
+
+.twoButtons{
+    align-items: center;
+    margin-left: 450px;
+}
+
+button{
+    color: #ff49f3;
+    font-size: 20px;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    text-shadow: 4px 4px 9px #ce49ff;
+    background-color: transparent;
+    border-radius: 20px;
+    border-width: 5px;
+    border-color: #ff49f3;
+    align-items: center;
+    padding: 10px 10px;
+    margin-top: 75px;
+    margin-right: 150px;
+}
+
+.jesus{
+    width: 100%;
+    margin-top: 50px;
 }
