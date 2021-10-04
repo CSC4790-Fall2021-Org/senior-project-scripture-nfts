@@ -66,8 +66,8 @@
             </div>
 
             <div class = twoButtons>
-                <button> Follow our Twitter</button>
-                <button>Join the Discord</button>
+                <button class = button> Follow our Twitter</button>
+                <button class = button>Join the Discord</button>
             </div>
 
             <div>
@@ -84,12 +84,41 @@
             </div>
 
             <div id = "faq">
+                
                 <p class = titles> 
                     FAQs
                 </p>
-                <p class = text> 
-                    something here
-                </p>
+                <button class= accordion>question 1</button>
+                    <div class= panel>
+                        <p class = answer>something</p>
+                    </div>
+
+                <button class= accordion>question 2</button>
+                    <div class= panel>
+                        <p class = answer>something</p>
+                    </div>
+
+                <button class= accordion>question 3</button>
+                    <div class= panel>
+                        <p class = answer>something</p>
+                    </div>
+
+                    <script>
+                        var acc = document.getElementsByClassName("accordion");
+                        var i;
+            
+                        for (i = 0; i < acc.length; i++) {
+                            acc[i].addEventListener("click", function() {
+                                this.classList.toggle("active");
+                                var panel = this.nextElementSibling;
+                                if (panel.style.display === "block") {
+                                    panel.style.display = "none";
+                                } else {
+                                    panel.style.display = "block";
+                                }
+                        });
+                    }       
+                    </script>
             </div>
         </body>
     </main>

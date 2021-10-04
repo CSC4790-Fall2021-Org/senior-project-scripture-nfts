@@ -95,7 +95,7 @@
     margin-left: 450px;
 }
 
-button{
+.button{
     color: #ff49f3;
     font-size: 20px;
     font-family: 'Ubuntu';
@@ -115,3 +115,59 @@ button{
     width: 100%;
     margin-top: 50px;
 }
+
+.accordion{
+    background-color: #333333;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    margin-left: 170px;
+    width: 1100px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    color: #ff49f3;
+    font-size: 20px;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    text-shadow: 4px 4px 9px #ce49ff;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ff49f3;
+    color:black;
+    text-shadow: 4px 4px 9px white;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel{
+    margin-left: 170px;
+    width: 1100px;
+    background-color:#222222;
+    display: none;
+    overflow: hidden;
+  }
+
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #ff49f3;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    color:black;
+  }
+
+  .answer{
+    background-color: #222222;
+    padding-left: 50px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+  }
