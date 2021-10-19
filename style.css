@@ -191,14 +191,12 @@
 }
 
 #left {
-    width: 200px;
+    width: 80%;
     float: left;
     background-color: #222222;
   }
 #right {
-    margin-left: 200px;
     background-color: #222222;
-    /* Change this to whatever the width of your left column is*/
   }
 
 .footerTitles {
@@ -207,7 +205,20 @@
     font-family: 'Ubuntu';
     font-weight: bold;
     text-shadow: 4px 4px 9px #ce49ff;
-    margin-top: 10px;
-    margin-left: 170px;
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-bottom: 0px;
     background-color: #222222;
+    float: right;
+}
+
+.footerLink {
+    color: white;
+    font-size: 16px;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    margin-right: 100px;
+    margin-top: 2px;
+    background-color: #222222;
+    float: right;
 }
