@@ -41,12 +41,11 @@
     background-color: #222222;
 }
 
-.link2{
-    color: white;
+.link:hover{
+    color:#ff49f3;
+    text-decoration: none;
 }
 
-
- 
 .home{
     width: 100%;
     padding-top: 40px;
@@ -74,16 +73,15 @@
 
 .grid{
     display: flex;
-    flex-wrap: wrap;
-    margin-left: 170px;
-    
+    /*flex-wrap: wrap;*/
+    margin-left: 5%;
 }
 
 .nft{
     margin-top: 50px;
-    max-width: 300px;
+    max-width: 90%;
     max-height: 300px;
-    margin-right: 90px;
+    margin-right: 5%;
 }
 
 .description{
@@ -173,9 +171,10 @@
     background-color: #222222;
     padding-left: 50px;
     color: white;
-    font-size: 15px;
+    font-size: 18px;
     font-family: 'Ubuntu';
     font-weight: bold;
+    margin-top: 20px;
   }
 
   .footer {
@@ -221,4 +220,9 @@
     margin-top: 2px;
     background-color: #222222;
     float: right;
+}
+
+.footerLink:hover{
+    color:#ff49f3;
+    text-decoration: none;
 }
