@@ -58,7 +58,7 @@
     font-weight: bold;
     text-shadow: 4px 4px 9px #ce49ff;
     margin-top: 80px;
-    margin-left: 170px;
+    margin-left: 12%;
 }
 
 .text{
@@ -67,36 +67,37 @@
     font-family: 'Ubuntu';
     font-weight: bold;
     margin-top: 50px;
-    margin-left: 170px;
-    margin-right: 150px;
+    margin-left: 12%;
+    margin-right: 10%;
 }
 
 .grid{
     display: flex;
-    /*flex-wrap: wrap;*/
-    margin-left: 5%;
+    margin-left: 6%;
 }
 
 .nft{
     margin-top: 50px;
-    max-width: 90%;
-    max-height: 300px;
-    margin-right: 5%;
+    max-width: 19%;
+    max-height: 19%;
+    margin-left: 6%;
+    margin-right: 6%;
 }
 
 .description{
-    margin-right: 200px;
-    margin-left: 80px;
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 11%;
     color: white;
     font-size: 20px;
     font-family: 'Ubuntu';
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .twoButtons{
     align-items: center;
-    margin-left: 450px;
+    margin-left: 30%;
 }
 
 .button{
@@ -112,7 +113,7 @@
     align-items: center;
     padding: 10px 10px;
     margin-top: 75px;
-    margin-right: 150px;
+    margin-right: 18%;
 }
 
 .jesus{
@@ -125,7 +126,7 @@
     color: #444;
     cursor: pointer;
     padding: 18px;
-    margin-left: 170px;
+    margin-left: 12%;
     width: 1100px;
     text-align: left;
     border: none;
@@ -147,7 +148,7 @@
   
   /* Style the accordion panel. Note: hidden by default */
   .panel{
-    margin-left: 170px;
+    margin-left: 12%;
     width: 1100px;
     background-color:#222222;
     display: none;
@@ -177,7 +178,31 @@
     margin-top: 20px;
   }
 
-  .footer {
+  .grid2{
+    display: flex;
+    margin-left: 10%;
+}
+
+.team{
+    margin-top: 50px;
+    max-width: 25%;
+    max-height: 25%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.description2{
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 25%;
+    color: white;
+    font-size: 20px;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.footer {
     overflow: hidden;
     background-color: #222222;
     clear: both;
