@@ -79,7 +79,7 @@
 .nft{
     margin-top: 50px;
     max-width: 19%;
-    max-height: 19%;
+    max-height: 300px;
     margin-left: 6%;
     margin-right: 6%;
 }
@@ -186,7 +186,7 @@
 .team{
     margin-top: 50px;
     max-width: 25%;
-    max-height: 25%;
+    max-height: 300px;
     margin-left: 10%;
     margin-right: 10%;
 }
