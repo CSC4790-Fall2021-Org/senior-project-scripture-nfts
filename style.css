@@ -149,7 +149,7 @@
   /* Style the accordion panel. Note: hidden by default */
   .panel{
     margin-left: 12%;
-    width: 1100px;
+    width: 75%;
     background-color:#222222;
     display: none;
     overflow: hidden;
