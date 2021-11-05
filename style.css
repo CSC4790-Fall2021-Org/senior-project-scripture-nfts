@@ -127,7 +127,8 @@
     cursor: pointer;
     padding: 18px;
     margin-left: 12%;
-    width: 1100px;
+    margin-right: 12%;
+    width: 76%;
     text-align: left;
     border: none;
     outline: none;
@@ -149,7 +150,8 @@
   /* Style the accordion panel. Note: hidden by default */
   .panel{
     margin-left: 12%;
-    width: 75%;
+    margin-right: 12%;
+    width: 76%;
     background-color:#222222;
     display: none;
     overflow: hidden;
