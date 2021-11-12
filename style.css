@@ -121,8 +121,20 @@
     margin-top: 50px;
 }
 
-#mint{
-    color:white;
+.mintButton{
+    color: #ff49f3;
+    font-size: 20px;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    text-shadow: 4px 4px 9px #ce49ff;
+    background-color: transparent;
+    border-radius: 20px;
+    border-width: 5px;
+    border-color: #ff49f3;
+    align-items: center;
+    padding: 10px 10px;
+    margin-top: 75px;
+    margin-left: 47%;
     
 }
 
