@@ -13,51 +13,39 @@ const ConnectAndMint = ({ reserve }) => {
 
   useEffect(() => {
     (async () => {
-      if (typeof window.web3 !== "undefined") {
-        // Use existing gateway
-        window.web3 = new Web3(window.ethereum);
-      } else {
-        alert("No ETH interface plugged. Using read-only.");
-      }
-      const scripturesContract = new window.web3.eth.Contract(ABI, ADDRESS);
-      setscripturesContract(scripturesContract);
+      //const scripturesContract = new window.web3.eth.Contract(ABI, ADDRESS);
+      //setscripturesContract(scripturesContract);
 
-      const totalSupply = await scripturesContract.methods.totalSupply().call();
-      setTotalSupply(totalSupply);
+      //const totalSupply = await scripturesContract.methods.totalSupply().call();
+      //setTotalSupply(totalSupply);
 
-      const saleIsActive = await scripturesContract.methods.saleIsActive().call();
-      setSaleStarted(saleIsActive);
+      //const saleIsActive = await scripturesContract.methods.saleIsActive().call();
+      //setSaleStarted(saleIsActive);
+      signIn()
     })();
   }, []);
 
   async function signIn() {
-    if (typeof window.web3 !== "undefined") {
-      // Use existing gateway
-      window.web3 = new Web3(window.ethereum);
-    } else {
-      alert("No ETH interface plugged. Using read-only.");
-    }
-
-    window.ethereum
-      .enable()
-      .then((accounts) => {
-        window.web3.eth.net
-          .getNetworkType()
-          // check if connected network is mainnet
-          .then((network) => {
-            if (network != "main") {
-              alert("You are on " + network + " network. Change network to Ethereum mainnet.");
-            }
-          });
-        let walletAddress = accounts[0];
-        setWalletAddress(walletAddress);
-        setSignedIn(true);
-        callContractData(walletAddress);
-      })
-      .catch((err) => {
-        // Handle error. Likely the user rejected the login
-        console.error(err);
-      });
+    if (typeof window.web3 !== 'undefined') {
+        window.web3 = new Web3(window.ethereum);
+       
+      } else {
+        alert("No Ethereum interface injected into browser. Read-only access");
+      }
+  
+      window.ethereum.enable()
+        .then(function (accounts) {
+          window.web3.eth.net.getNetworkType()
+          .then((network) => {console.log(network);if(network != "main"){alert("You are on " + network+ " network. Change network to mainnet or you won't be able to do anything here")} });  
+          let wallet = accounts[0]
+          setWalletAddress(wallet)
+          setSignedIn(true)
+          callContractData(wallet)
+  
+    })
+    .catch(function (error) {
+    console.error(error)
+    })
   }
 
   async function signOut() {
@@ -103,11 +91,6 @@ const ConnectAndMint = ({ reserve }) => {
     Br(),
     Br(),
     
-    e(
-      "div",
-      { className: "whitelisted-notices" },
-    
-    )
   );
 };
 
